@@ -23,7 +23,7 @@ public class ProductMenu {
         while (true) {
             try {
                 choice = Integer.parseInt(scanner.nextLine());
-                if (choice > min && choice < max) {
+                if (choice >= min && choice < max) {
                     break;
                 }
             } catch (Exception e) {
@@ -81,7 +81,10 @@ public class ProductMenu {
                 case 3:
                     removeProduc2();
                     break;
+                case 4:
+                    break;
                 default:
+
                     break;
 
             }
